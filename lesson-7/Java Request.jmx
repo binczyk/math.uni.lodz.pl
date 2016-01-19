@@ -17,16 +17,16 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
-        <longProp name="ThreadGroup.start_time">1449755308000</longProp>
-        <longProp name="ThreadGroup.end_time">1449755308000</longProp>
+        <longProp name="ThreadGroup.start_time">1453232446000</longProp>
+        <longProp name="ThreadGroup.end_time">1453232446000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <JavaSampler guiclass="JavaTestSamplerGui" testclass="JavaSampler" testname="Test User" enabled="true">
+        <JavaSampler guiclass="JavaTestSamplerGui" testclass="JavaSampler" testname="Java Request" enabled="true">
           <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="Sleep_Time" elementType="Argument">
@@ -41,7 +41,7 @@
               </elementProp>
               <elementProp name="Label" elementType="Argument">
                 <stringProp name="Argument.name">Label</stringProp>
-                <stringProp name="Argument.value">Test numer ${Licznik} Test User ${__threadNum}</stringProp>
+                <stringProp name="Argument.value">Test  User ${licznik} - ${threadNum(1)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="ResponseCode" elementType="Argument">
@@ -73,17 +73,12 @@
           </elementProp>
           <stringProp name="classname">org.apache.jmeter.protocol.java.test.JavaTest</stringProp>
         </JavaSampler>
-        <hashTree>
-          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Zmienne zdefiniowane przez użytkownika" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
-          </Arguments>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Licznik" enabled="true">
-          <stringProp name="CounterConfig.start">1</stringProp>
+          <stringProp name="CounterConfig.start"></stringProp>
           <stringProp name="CounterConfig.end"></stringProp>
-          <stringProp name="CounterConfig.incr">1</stringProp>
-          <stringProp name="CounterConfig.name">Licznik</stringProp>
+          <stringProp name="CounterConfig.incr"></stringProp>
+          <stringProp name="CounterConfig.name">licznik</stringProp>
           <stringProp name="CounterConfig.format"></stringProp>
           <boolProp name="CounterConfig.per_user">false</boolProp>
         </CounterConfig>

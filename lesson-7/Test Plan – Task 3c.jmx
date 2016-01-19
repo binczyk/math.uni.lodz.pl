@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jmeterTestPlan version="1.2" properties="2.8" jmeter="2.13 r1665067">
   <hashTree>
-    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan - Task 3c" enabled="true">
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan – Task 3c" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
@@ -19,14 +19,14 @@
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
-        <longProp name="ThreadGroup.start_time">1449756793000</longProp>
-        <longProp name="ThreadGroup.end_time">1449756793000</longProp>
+        <longProp name="ThreadGroup.start_time">1453234574000</longProp>
+        <longProp name="ThreadGroup.end_time">1453234574000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request - register user" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request – register user" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -37,12 +37,17 @@
 &lt;FIRST_NAME&gt;name&lt;/FIRST_NAME&gt;&#xd;
 &lt;LAST_NAME&gt;name2&lt;/LAST_NAME&gt;&#xd;
 &lt;EMAIL&gt;mailj@gft.com&lt;/EMAIL&gt;&#xd;
-&#xd;
+&lt;QUESTION&gt;Which one of the following keywords allows to sort the query&#xd;
+result?&#xd;
+GROUP BY&#xd;
+ORDER FROM&#xd;
+ASC BY&#xd;
+ORDER BY&lt;/QUESTION&gt;&#xd;
+&lt;CHALLENGE&gt;null&lt;/CHALLENGE&gt;&#xd;
+&lt;ANSWER&gt;null&lt;/ANSWER&gt;&#xd;
 &lt;QUESTION_ID&gt;7&lt;/QUESTION_ID&gt;&#xd;
 &lt;ANSWER_INDEX&gt;28&lt;/ANSWER_INDEX&gt;&#xd;
-&lt;/REGISTRATION&gt;&#xd;
-&#xd;
-</stringProp>
+&lt;/REGISTRATION&gt;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -52,7 +57,7 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol">HTTP</stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
           <stringProp name="HTTPSampler.path">/registrationform/registrations/</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -100,7 +105,7 @@
           <collectionProp name="HeaderManager.headers">
             <elementProp name="" elementType="Header">
               <stringProp name="Header.name">Content-Type</stringProp>
-              <stringProp name="Header.value">text/xml</stringProp>
+              <stringProp name="Header.value">text\xml</stringProp>
             </elementProp>
           </collectionProp>
         </HeaderManager>
